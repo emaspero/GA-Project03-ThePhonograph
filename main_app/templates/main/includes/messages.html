@@ -1,0 +1,28 @@
+
+
+<!-- Throws error when a potential user enters wrong details on sign up form  -->
+{% if request.user.is_anonymous %}
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <div class="alert alert-danger" id="alert" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endif %}
+
+<!-- Displays success messages when user signs up successfully -->
+{% if user.is_authenticated %}
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <div class="alert alert-success" id="alert" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endif %}
+

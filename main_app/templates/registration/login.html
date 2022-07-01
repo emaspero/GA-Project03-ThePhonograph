@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="flex justify-center mb-3 mt-3">
+    <h1 class="record-name">Login</h1>
+  </div>
+
+  <hr style="border: 1px solid #524f4a" />
+
+<div class="flex justify-center mt-3">
+    <form action="{% url 'login' %}" method="post" onSubmit="clearField();">
+        {% csrf_token %}
+    
+        {{ form.as_p }}
+        <div class="flex justify-center">
+        <input class="text-white py-2 px-4 border-b-4 border-yellow-700 hover: border-amber-400 rounded" style="background-color: #524F4a" type="submit" value="Login">
+        </div>
+    </form> 
+
+
+</div>
+
+<div class="flex justify-center mt-3 mb-3">
+
+<div class=""><p>Not registered?  <a href="{% url 'signup' %}">Create an account</a> instead.</p></div>
+
+</div>
+
+
+
+
+
+
+
+<hr style="border: 1px solid #524f4a;">
+
+
+
+{% endblock %}

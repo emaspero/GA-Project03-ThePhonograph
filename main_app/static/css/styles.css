@@ -1,0 +1,440 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+
+
+}
+
+.master-content {
+
+    width: 1300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+
+
+}
+
+
+
+
+/* Top Nav */
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.link-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* Bottom Nav */
+
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.create-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Record Details Page */
+
+.image-details-page {
+    width: 400px;
+}
+
+
+.artist-text {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+
+.vl {
+    border-left: 2px solid #524f4a;
+    height: 500px;
+  }
+
+
+/* Records Index */
+
+
+
+.record-name {
+    
+    display: block;
+    font-weight: bold;
+
+}
+
+.record-artist {
+    font-style: italic;
+}
+
+/* Artists Index */
+
+.artist-name {
+    font-weight: bold;
+    display: block;
+}
+
+.artist-location {
+    display: block;
+    font-style: italic;
+
+}
+
+/* Create Record */
+
+.form-container {
+    margin-top: 30px;
+}
+
+.form-container > .record-form > h1 {
+    color: #212529;
+    padding-bottom: 30px;
+    font-size: 2vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    /* Effecting Artist Form as well */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.record-form {
+    background-color: #A6A998;
+    padding: 30px;
+}
+
+.record-form > table > tbody > tr > td > input {
+    color: #C09984;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px
+
+}
+
+.record-form > table > tbody > tr > td > textarea {
+    color: #C09984;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px
+
+}
+
+.record-form > table > tbody > tr > td > select {
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.record-form > input {
+    width: 100%;
+
+}
+
+/* Create Artist */
+
+
+.artist-form {
+    background-color: #A6A998;
+    padding: 30px;
+}
+
+.artist-form > table > tbody > tr > td > input {
+    color: #C09984;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px
+
+}
+
+.artist-form > table > tbody > tr > td > textarea {
+    color: #C09984;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px
+
+}
+
+
+.artist-form > table > tbody > tr > td > select {
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.artist-form > input {
+    width: 100%;
+
+}
+
+.form-container > .artist-form > h1 {
+    color: #212529;
+    padding-bottom: 30px;
+    font-size: 2vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Home Page  */
+
+
+.home-page-body {
+
+    display: grid;
+    
+}
+
+/* Slider Text */
+
+.type-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* Slider One */
+.slide-one-artist:hover {
+    text-decoration: line-through;
+}
+
+.slide-one-artist {
+    position: absolute;
+    top: 323px;
+    left: 89px;
+    font-size: 55px;
+    font-weight:bold;
+    color:#ffe7db;
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+    
+
+}
+
+.slide-one-record:hover {
+    text-decoration: line-through;
+}
+
+.slide-one-record {
+
+    position: absolute;
+    top: 420px;
+    left: 89px;
+    font-size: 35px;
+    font-weight:bold;
+    color:#ffe7db;
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+
+
+}
+
+/* Slider Two */
+
+.slide-two-artist:hover {
+    text-decoration: line-through;
+}
+
+.slide-two-artist {
+    position: absolute;
+    top: 323px;
+    left: 89px;
+    font-size: 55px;
+    font-weight:bold;
+    color:#ffe7db;
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+
+}
+
+.slide-two-record:hover {
+    text-decoration: line-through;
+}
+
+.slide-two-record {
+
+    position: absolute;
+    top: 420px;
+    left: 89px;
+    font-size: 35px;
+    font-weight:bold;
+    color:#ffe7db;
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+
+}
+
+/* Slider Three */
+
+.slide-three-artist:hover {
+    text-decoration: line-through;
+}
+
+.slide-three-artist {
+    position: absolute;
+    top: 323px;
+    left: 89px;
+    font-size: 55px;
+    font-weight:bold;
+    color:#ffe7db;
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+
+}
+
+.slide-three-record:hover {
+    text-decoration: line-through;
+}
+
+.slide-three-record {
+
+    position: absolute;
+    top: 420px;
+    left: 89px;
+    font-size: 35px;
+    font-weight:bold;
+    color:#ffe7db;
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+
+}
+
+/* Slider Functionality */
+
+
+.slider {
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;  
+   
+  }
+
+.slide {
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #212529;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
+
+
+.box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: #524f4a;
+    margin: 10px;
+  }
+
+  .box > img {
+    display: flex;
+    margin: 0;
+    opacity: 0.2;
+  }
+
+  /* .box > img:hover {
+    opacity: 1;
+
+
+  } */
+
+  .box > .text {
+    position: absolute;
+    color: #d6af9a;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+
+  }
+
+  .box > .text::after {
+    background-color:rgb(8, 4, 4, 0.5);
+    padding: 0;
+  }
+
+

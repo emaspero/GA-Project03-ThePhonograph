@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+<div class="form-container">
+
+    
+    <form class="record-form" action="" method="post" onSubmit="clearField();">
+
+
+
+        {% csrf_token %}
+
+        <table>
+            
+            {% if object %}
+    
+                <h1>Edit <span>{{ object.name }}</span></h1>
+
+            {% else%}
+
+                <h1>Create Record</h1>
+        
+            {% endif %}
+
+            
+            {{form.as_table}}
+            
+        </table>
+
+        <input class="" type="submit" value="Submit">
+
+    </form>
+
+
+    {% endblock %}
+
+</div>

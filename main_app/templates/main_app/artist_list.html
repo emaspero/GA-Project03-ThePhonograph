@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div class="flex flex-wrap justify-center">
+
+
+    {% for artist in artist_list %}
+
+        <div class="h-25 w-25 ml-3 mr-3 mt-3 mb-3" style="background-color: white">
+
+
+            <a href="{% url 'artists_detail' artist.id%}"><img src="{{artist.image}}" class="aspect-auto"></a>
+            
+            <div class="container pt-2 h-20 items-center justify-items-center">
+
+                <span class="artist-name block">{{ artist.artist_name }}</span>
+                
+                <span class="artist-location block">{{ artist.artist_location }}</span>
+
+            </div>
+        </div>
+
+    </a>
+
+    {% endfor %}
+
+</div>
+{% endblock %}

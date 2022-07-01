@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="flex justify-center mb-3 mt-3">
+
+  <h1 class="record-name">{{ crate.name }}</h1>
+</div>
+
+
+{% for record in crate.records.all %}
+
+<div class="record-container flex wrap ml-3 mr-3 mt-3 border-2 border-black justify-between" style="background-color: white;">
+  <div class="flex wrap">
+<div class="mt-1 ml-1 mb-1 mr-1"> <a href="{% url 'records_detail' record.id %}"><img class="h-44" src="{{record.image}}" alt=""></a> </div>
+
+  <div class="mt-1 ml-3 w-96"> 
+    Name: <span class="record-name">{{ record.name }}</span> 
+    Genre: <br> <span class="record-name">{{ record.genre }}</span> 
+    Artist(s): <br> <span class="record-name"> {% for artist in record.artists.all %}
+
+        {{artist.artist_name}}
+    
+        {% endfor %} </span>
+  </div>
+</div>
+  <div class="self-end mr-1 mb-1">
+    <form action="{% url 'unassoc_record' crate.id record.id %}" method="post">
+      {% csrf_token %}
+      
+      <button class="text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover: border-amber-400 rounded" style="background-color: #524F4a;" type="submit">Remove</button>
+    
+    </form>
+  </div>
+</div>
+
+{% endfor %} {% endblock %}
