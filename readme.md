@@ -50,14 +50,14 @@ As a first step we started laying out the several connections using ERDs as that
 The focus for the first day was mainly to create the starting code for this project, creating our first two Models (Record and Tracklist) and adding the User auth functionality. At the end of the day, the User was able to sign-up, login and create/update/delete a Record and while in the record detail page the User was also able to add tracks to that specific record's tracklist.
 
 ###### Trello
-![Trello board screenshot picture](/thephonograph/main_app/static/images/Trello%20Screenshot.png)
+![Trello board screenshot picture](/main_app/static/images/Trello%20Screenshot.png)
 [Trello Board](https://trello.com/b/NnHgZg5d/project-03)
 ###### ERD (Entity Relationship Diagrams)
-![ERDs screenshot](/thephonograph/main_app/static/images/ERDs%20Screenshot.png)
+![ERDs screenshot](/main_app/static/images/ERDs%20Screenshot.png)
 ###### Wireframes
-![Figma screenshot](/thephonograph/main_app/static/images/Figma%20Screenshot.png)
+![Figma screenshot](/main_app/static/images/Figma%20Screenshot.png)
 ###### User Stories
-![User Stories](/thephonograph/main_app/static/images/User%20Stories.png)
+![User Stories](/main_app/static/images/User%20Stories.png)
 
 ##### Day 2
 During the second day, part of the time was dedicate to edit the sign-up form allowing the User to also input first name, last name and email address alongside the standard username and password. The functionality to allow the User to reset the password was also implemented. Two additional Models were created (Artist and Crate). The User was now allowed to add the favorite Records to its own Crate. The links-display has been amended, now a logged-in User can see and access several more pages compared to a non-logged-in User.
