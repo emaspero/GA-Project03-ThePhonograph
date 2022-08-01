@@ -1,18 +1,39 @@
 ![General Assembly's Logo](https://camo.githubusercontent.com/603ef5eae7d28900a9678ae96c6c60a9c72f8a059c328b28cf978df999cea1f8/68747470733a2f2f692e696d6775722e636f6d2f6c7a56493364382e706e67)
 
-# The Phonograph - A Collection of Records
+# SEI Project 3: The Phonograph - A Collection of Records
 
-## Overview
-![App home page screenshot](/thephonograph/main_app/static/images/Homepage%20Screenshot.png)
-![Record detail page screenshot](/thephonograph/main_app/static/images/Record%20Detail%20Screenshot.png)
+### Table of Contents
+- Project Overview
+    - Team Members
+- Goal
+    - Technologies Used
+- Approach Taken
+- Challenges and Wins
+    - Challenges
+    - Wins
+    - Bugs
+- Future Enhancements 
+
+---
+
+# Project Overview
+![App home page screenshot](/main_app/static/images/Homepage%20Screenshot.png)
+![Record detail page screenshot](/main_app/static/images/Record%20Detail%20Screenshot.png)
+
+### Link to the deployed app: [The Phonograph](https://hydro-keener-88414.herokuapp.com/)
+
+## Team Members
+- Elisabetta Maspero - [GitHub](https://github.com/emaspero) | [LinkedIn](https://www.linkedin.com/in/elisabetta-maspero-990bb3111/)
+- Cristopher Carey - [GitHub](https://github.com/christopher-k-c) | [LinkedIn](https://www.linkedin.com/in/chriskcarey/)
+- Sam Hackwood - [GitHub](https://github.com/samhackwood) | [LinkedIn](https://www.linkedin.com/in/samuel-hackwood-40b050233/)
 
 
-### Requirements
+# Goal
 - The application includes at least 2 related models, one of them being the User, and the major CRUD functions have been implemented
 - Some pages have a restricted access, therefore they can only be viewed by logged-in Users, the User is also able to sign-up/login, change the password and logout
 - The Users receives feedback messages for success/fail form submissions, some of the forms have mandatory fields otherwise the User is not allowed to submit them; after every submission the forms are cleared of the data
 
-### Technologies Used
+## Technologies Used
 - Git/GitHub
 - HTML and CSS
 - CSS Library
@@ -21,12 +42,8 @@
 - PostgreSQL
 - pgAdmin 4
 
-### Team Members
-- Elisabetta Maspero - [GitHub](https://github.com/emaspero) | [LinkedIn](https://www.linkedin.com/in/elisabetta-maspero-990bb3111/)
-- Cristopher Carey - [GitHub](https://github.com/christopher-k-c) | [LinkedIn](https://www.linkedin.com/in/chriskcarey/)
-- Sam Hackwood - [GitHub](https://github.com/samhackwood) | [LinkedIn](https://www.linkedin.com/in/samuel-hackwood-40b050233/)
 
-### Process
+# Approach Taken
 ##### Day 1
 As a first step we started laying out the several connections using ERDs as that helped us to determine which Models were going to be part of the application and how they would interact with each other. We proceeded with creating a Trello board and assigning tasks to each member of the Team and, subsequently, using Figma we created a basic layout on how we would like the application to look like.
 
@@ -53,12 +70,18 @@ During the afternoon part of the Team started working on the styling for the app
 ##### Day 4
 The Team has been focusing mainly on the styling using Tailwind CSS Library and deploying the app on Heroku.
 
-### Deployed application link
-[The Phonograph](https://thephonographsei64.herokuapp.com/)
-### Challenges
+# Challenges and Wins
+## Challenges
 As a Team we did find it challenging to fully understand what happens in the background with the CBVs, as the code is a lot shorter and less obvious than express, it's not always immediate to fully comprehend and subsequently work with the code. We did struggle understanding how to pull the data from models that were linked by relationships and show it on the page (eg. how to display the Artist name from the Record page considering that the relationship was a many to many). We decided to implement a CSS Library that we did not use during the lectures before, Tailwind, and does take time and understanding to be able to fully make the best out of these kind of features. When debugging we did run a vast amount of Google searches and the answers that we get from the web are not always the easiest to understand/implement due to the wide amount of different ways in which developers work, especially based on their experience. 
+## Wins
+- First experience implementing Tailwind.
+- After the project I feel a lot more confident using Python/Django.
 
-### Features to be added in the future
+## Bugs
+- While deploying the app something went wrong with Heroku, we ended up re-deploying it on a different link.
+- The styling does not work properly in every single page.
+
+# Future Enhancements
 - The password reset email only gets sent to the Terminal at the moment, the link fully works and the functionality fully works, but it would be good to have it as an actual sent email instead. As well, we could implement a verification email to be sent upon registration of a new User.
 - Implement on the homepage a carousel showing the latest record that have been added to the database.
 - Different levels of privileges based on the User type. 
